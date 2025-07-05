@@ -53,11 +53,11 @@ The main issues preventing deployment were:
    - Under **Source**, select **GitHub Actions**
    - The workflow will automatically run and deploy your site
 
-3. **Update repository name** (if different):
-   If your repository name is not `sohrabwork-main`, update these files:
-   - `vite.config.ts`: Change `/sohrabwork-main/` to `/your-repo-name/`
-   - `src/App.tsx`: Change `/sohrabwork-main` to `/your-repo-name`
-   - `package.json`: Update the homepage URL
+3. **Configuration Updated**:
+   The configuration has been updated for your repository `sohrab.github.io`:
+   - `vite.config.ts`: Base path set to `/sohrab.github.io/`
+   - `src/App.tsx`: Basename set to `/sohrab.github.io`
+   - `package.json`: Homepage URL set to `https://sohrab789.github.io/sohrab.github.io`
 
 ### Option 2: Manual Deployment
 
@@ -84,8 +84,8 @@ The main issues preventing deployment were:
 ## Troubleshooting
 
 ### Site shows blank page
-- Check that the base path in `vite.config.ts` matches your repository name
-- Verify the basename in `src/App.tsx` matches your repository name
+- Check that the base path in `vite.config.ts` is set to `/sohrab.github.io/`
+- Verify the basename in `src/App.tsx` is set to `/sohrab.github.io`
 
 ### 404 errors on refresh
 - Make sure `public/404.html` exists
@@ -104,10 +104,8 @@ The main issues preventing deployment were:
 
 Once deployed, your site will be available at:
 ```
-https://[your-github-username].github.io/sohrabwork-main/
+https://sohrab789.github.io/sohrab.github.io/
 ```
-
-Replace `[your-github-username]` with your actual GitHub username.
 
 ## Testing Locally
 

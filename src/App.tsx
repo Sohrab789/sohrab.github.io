@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 // Get the base path for GitHub Pages
-const basename = process.env.NODE_ENV === 'production' ? '/sohrabwork-main' : '';
+const basename = process.env.NODE_ENV === 'production' ? '/sohrab.github.io' : '';
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
